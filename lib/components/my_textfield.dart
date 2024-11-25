@@ -1,3 +1,4 @@
+import 'package:comet/utils/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -21,7 +22,7 @@ class MyTextfield extends StatelessWidget {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
     final textColor = isDarkMode ? Colors.white : Colors.black;
     final borderColor =
-        isDarkMode ? Colors.grey.shade600 : Colors.grey.shade400;
+        isDarkMode ? Vx.blue400 : Vx.green400;
     final fillColor = isDarkMode ? Colors.grey.shade800 : Colors.grey.shade200;
 
     return Padding(

@@ -128,6 +128,7 @@ Average Salary: ${collegeInfo['Average Salary']}
             child: Container(
               margin: const EdgeInsets.only(left: 10),
               child: TextField(
+                
                 enabled: true,
                 style: const TextStyle(color: Vx.white, fontSize: 16),
                 controller: _messageController,
@@ -169,7 +170,7 @@ Average Salary: ${collegeInfo['Average Salary']}
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Vx.gray400,
+        backgroundColor: Vx.gray500,
         appBar: AppBar(
           automaticallyImplyLeading: false,
           centerTitle: true,
