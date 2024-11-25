@@ -6,7 +6,8 @@ import 'package:velocity_x/velocity_x.dart';
 
 
 class BottomNavigationBarPage extends StatefulWidget {
-  const BottomNavigationBarPage({super.key});
+  final ValueNotifier<ThemeMode> themeNotifier;
+  const BottomNavigationBarPage({super.key,required this.themeNotifier});
 
   @override
   State<BottomNavigationBarPage> createState() => _BottomNavigationBarPageState();
@@ -57,12 +58,12 @@ class _BottomNavigationBarPageState extends State<BottomNavigationBarPage> {
           children: [
             Builder(builder: (context) {
               return const ChatPage(
-                recieverUserName: 'ChatBot',
+                recieverUserName: 'Comet',
                 recieverID: 'user123',
                 recieverEmail: 'john@example.com',
               );
             }),
-            const SettingsPage(),
+            SettingsPage(themeNotifier: widget.themeNotifier,),
           ],
         ),
       ),
