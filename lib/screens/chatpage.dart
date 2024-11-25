@@ -169,7 +169,7 @@ Average Salary: ${collegeInfo['Average Salary']}
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Vx.gray800,
+        backgroundColor: Vx.gray400,
         appBar: AppBar(
           automaticallyImplyLeading: false,
           centerTitle: true,
