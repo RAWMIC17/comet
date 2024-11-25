@@ -127,20 +127,31 @@ Average Salary: ${collegeInfo['Average Salary']}
           Expanded(
             child: Container(
               margin: const EdgeInsets.only(left: 10),
-              child: TextField(
-                
-                enabled: true,
-                style: const TextStyle(color: Vx.white, fontSize: 16),
-                controller: _messageController,
-                decoration: InputDecoration(
-                  fillColor: Vx.red500,
-                  hintText: "Type a message...",
-                  hintStyle: const TextStyle(color: Vx.gray300, fontWeight: FontWeight.w300),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(50),
+              child: Theme(data: ThemeData(textSelectionTheme: TextSelectionThemeData(cursorColor: Vx.green400,selectionHandleColor: Vx.green400)),
+                child: TextField(
+                  
+                  enabled: true,
+                  style: const TextStyle(color: Vx.white, fontSize: 16),
+                  
+                  controller: _messageController,
+                  decoration: InputDecoration(
+                    fillColor: Vx.red500,
+                    hintText: "Type a message...",
+                    hintStyle: const TextStyle(color: Vx.gray300, fontWeight: FontWeight.w300),
+                    border: const OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(60)),
+                          ),
+                          enabledBorder: const OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(60)),
+                            borderSide: BorderSide(color: Vx.blue400),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(60.0), 
+                            borderSide: const BorderSide(color: Vx.green500, width: 2.0),
+                          ),
                   ),
+                  focusNode: myFocusNode,
                 ),
-                focusNode: myFocusNode,
               ),
             ),
           ),

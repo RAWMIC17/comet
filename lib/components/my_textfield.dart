@@ -22,7 +22,7 @@ class MyTextfield extends StatelessWidget {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
     final textColor = isDarkMode ? Colors.white : Colors.black;
     final borderColor =
-        isDarkMode ? Vx.blue400 : Vx.green400;
+        isDarkMode ? Colors.grey.shade600 : Colors.grey.shade400;
     final fillColor = isDarkMode ? Colors.grey.shade800 : Colors.grey.shade200;
 
     return Padding(
