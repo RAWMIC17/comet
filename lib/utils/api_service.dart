@@ -2,7 +2,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class ApiService {
-  final String _baseUrl = "http://192.168.95.156:5000"; // Replace with your actual API base URL
+  final String _baseUrl = "http://127.0.0.1:5000/"; // Replace with your actual API base URL
 
   // Function to fetch college data
   Future<List<Map<String, dynamic>>> fetchCollegeData() async {
