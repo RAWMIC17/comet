@@ -2,7 +2,7 @@
 
 A Career Guidance Chatbot built with Flutter (Frontend) and Flask (Backend) to assist users in making informed career decisions through interactive responses.
 
-✨ Features
+## ✨ Features
 
 Interactive Chatbot: Provides career advice based on user queries.
 
@@ -15,7 +15,7 @@ Real-Time Communication: Fast and responsive API calls between frontend and back
 Bookmark & History: Save past conversations for future reference.
 
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 Flutter (UI & Frontend)
 
@@ -24,11 +24,11 @@ Flask (Backend & API)
 Firebase (Authentication)
 
 
-📸 Screenshots
+## 📸 Screenshots
 
 (Add relevant screenshots here)
 
-🚀 Installation
+## 🚀 Installation
 
 Frontend (Flutter)
 
@@ -54,7 +54,7 @@ Backend (Flask):
 
 
 
-💡 Future Enhancements
+## 💡 Future Enhancements
 
 Resume Review
 
